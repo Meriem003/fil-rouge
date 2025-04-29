@@ -234,3 +234,10 @@ function getname (employees){
 const names = getname(employees)
 console.log(names);
 
+function getlastname(employees){
+for (let i= employees.length-1; i>= 0; i--){
+    return employees[i].lastName
+}
+}
+const lastName = getlastname(employees)
+console.log(lastName)
