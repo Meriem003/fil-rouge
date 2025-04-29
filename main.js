@@ -241,3 +241,14 @@ for (let i= employees.length-1; i>= 0; i--){
 }
 const lastName = getlastname(employees)
 console.log(lastName)
+
+function depart(employees, id){
+    for(let i = 0; i < employees.length;i++){
+        if(employees[i].id === id){
+            return employees[i].department
+        }
+    }
+}
+
+const sinc = depart(employees, 5)
+console.log(sinc);
