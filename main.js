@@ -899,3 +899,17 @@ function getEmployeesWithMoreThanTwoSkills(employees){
 }
 
 console.log(getEmployeesWithMoreThanTwoSkills(employees))
+
+function getEmployeesByLastNameInitial(employees){
+  let res = []
+  for(let i = 0; i < employees.length; i++){
+    for(let j = 0; j < employees[i].lastName.length; j++){
+      if(employees[i].lastName[0]==="L"){
+        res[res.length]= employees[i]
+        break
+      }
+    }
+  }
+  return res
+}
+console.log(getEmployeesByLastNameInitial(employees))
