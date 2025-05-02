@@ -913,3 +913,16 @@ function getEmployeesByLastNameInitial(employees){
   return res
 }
 console.log(getEmployeesByLastNameInitial(employees))
+
+function getEmployeesByLastNameInitial(employees){
+  let res = []
+  for(let i = 0; i < employees.length; i++){
+    const year = parseInt(employees[i].joinDate.split("-")[0])
+      if(year < 2020){
+        res[res.length]= employees[i]
+        break
+      }
+  }
+  return res
+}
+console.log(getEmployeesByLastNameInitial(employees))
