@@ -889,3 +889,13 @@ for( let i=0 ; i < employees.length; i++){
 }
 console.log(getEmployeesByProject(employees))
 
+function getEmployeesWithMoreThanTwoSkills(employees){
+  let res = []
+  for(let i = 0; i < employees.length  ; i++){
+      if (employees[i].skills.length  > 2)
+        res[res.length]= employees[i]
+    }
+  return res
+}
+
+console.log(getEmployeesWithMoreThanTwoSkills(employees))
