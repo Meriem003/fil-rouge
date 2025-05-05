@@ -936,3 +936,13 @@ function getMultilingualEmployees(employees){
   return res
 }
 console.log(getMultilingualEmployees(employees))
+function getHighEarningEmployees(employees){
+  let res = []
+  for (let i = 0; i < employees.length; i++){
+    if(employees[i].salary > 60000){
+      res[res.length] = employees[i]
+    }
+  }
+  return res
+}
+console.log(getHighEarningEmployees(employees))
