@@ -926,3 +926,13 @@ function getEmployeesByLastNameInitial(employees){
   return res
 }
 console.log(getEmployeesByLastNameInitial(employees))
+function getMultilingualEmployees(employees){
+  let res = []
+  for (let i = 0; i < employees.length ; i++){
+    if(employees[i].languages.length > 2){
+      res[res.length] = employees[i]
+    }
+  }
+  return res
+}
+console.log(getMultilingualEmployees(employees))
